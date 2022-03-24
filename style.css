@@ -1,0 +1,1954 @@
+
+@font-face {
+    font-family: 'Monologue DEMO';
+    src: url('./fonts/Monologue.ttf');
+    
+}
+
+@font-face {
+    font-family: 'Karrik';
+    src: url('./fonts/Karrik-Regular.ttf')
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+body p{
+    font-family: 'Karrik';
+    font-size: 1.3vw;
+}
+
+body .insta a{
+    font-size: 1.3vw;
+}
+
+/* Le menu  */
+
+nav{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    padding-bottom: 15px;
+    background: #f4f4f4;
+}
+
+nav .logo{
+    padding-left: 30px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -1.4vw;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .logo h1{
+    width: 100%;
+    font-size: 8vw;
+    font-weight: normal;
+    font-family: 'Monologue DEMO';
+}
+
+nav .navigation{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 3px solid #000;
+}
+
+nav .navigation ul{
+    display: flex;
+    margin-bottom: 37px;
+    padding-right: 20px;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin: auto 40px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    font-family: 'Karrik';
+}
+
+
+/* Le traitement de la page d'accueil */
+
+
+.home .block{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    background: #f4f4f4;
+    position: relative;
+}
+
+.home .block .pic{
+    width: 35vw;
+    height: 38vw;
+    position: absolute;
+    left: 2.4%;
+}
+
+.home .block .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .block .txt{
+    height: 300px;
+    width: 55%;
+    position: absolute;
+    left: 41%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home .block .txt p{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-family: 'Karrik';
+}
+
+.home .block .home-reseau{
+    height: 180px;
+    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 100%;
+    left: 38%;
+}
+
+.home .block .home-reseau .direction-fleche{
+    height: 100%;
+    width: 20%;
+    padding-left: 100px;
+    margin-top: 20px;
+}
+
+.home .block .home-reseau .direction-fleche img{
+    height: 80px;
+    animation: bounce 1.7s infinite;
+}
+
+@keyframes bounce{
+	
+
+	50%{
+		transform: translateY(25px);
+	}
+
+	
+
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+.home .block .home-reseau .insta{
+    height: 100%;
+    width: 20%;
+    margin-top: 2vh;
+    text-align: center;
+    font-family: 'Karrik';
+}
+
+.home .block .home-reseau .insta i{
+    font-size: 80px;
+}
+
+
+/* les projets */
+
+.home .projets{
+    width: 94%;
+    margin-top: 45vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.home .projets .textes{
+    width: 50%;
+}
+.home .projets .textes h1{
+    font-size: 8vw;
+    font-weight: normal;
+    font-family: 'Monologue DEMO';
+}
+.home .projets .textes p{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    font-family: 'Karrik';
+}
+
+
+.home .projets .images{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.home .projets .images .projet{
+    width: 30%;
+    height: 9.38;
+    margin-bottom: 15px;
+}
+.home .projets .images .projet img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.home .bandeau{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.home .bandeau img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.home .pictures{
+    background: salmon;
+    width: 100%;
+    padding: 90px 90px;
+    margin-bottom: 100px;
+}
+.home .pictures .imgs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.home .pictures .imgs .img{
+    width: 31%;
+    height: 21vw;
+}
+.home .pictures .imgs .img img{
+    width: 100%;
+    height: 100%;
+}
+.home .pictures .projet2{
+    width: 90%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.home .pictures .projet2 .titre{
+    width: 50%;
+}
+.home .pictures .projet2 .titre h1{
+    font-size: 5vw;
+    font-weight: normal;
+    font-family: 'Monologue DEMO';
+}
+.home .pictures .projet2 .txt{
+    width: 50%;
+    padding-left: 50px;
+}
+
+
+/********************************************************
+****************** La page my work *********************/
+
+.liens{
+    width: 100%;
+    height: 25vh;
+    margin-top: 5vh;
+    padding-left: 1.6vw;
+    display: flex;
+}
+
+.liens .txt{
+    width: 20%;
+}
+
+.liens .txt h3{
+    font-size: 3vw;
+    font-family: 'Karrik';
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.liens .nav{
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.liens .nav button{
+    font-size: 1.7vw;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px 18px;
+    background: transparent;
+    cursor: pointer;
+    border: solid gray 1px;
+    font-family: 'Karrik';
+}
+.liens .nav button:hover{
+    background: lightgray;
+}
+
+.my_wokr{
+    width: 94%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my_wokr .work_projects{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my_wokr .work_projects .w_project{
+    position: relative;
+    width: 30%;
+    height: 25vw;
+    margin-bottom: 15px;
+}
+
+.my_wokr .work_projects .w_project .voile{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5vh;
+    color: white;
+    background: rgba(0, 0, 0, .6);
+    display: none;
+}
+.my_wokr .work_projects .w_project .voile a{
+    color: white;
+}
+
+.my_wokr .work_projects .w_project:hover .voile{
+    display: flex;
+}
+
+.my_wokr .work_projects  #milieu{
+    margin-top: 35px;
+}
+
+.my_wokr .work_projects .reseau{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.my_wokr .work_projects .reseau .insta{
+    font-size: 170px;
+    width: 100%;
+}
+
+.my_wokr .work_projects .reseau p{
+    font-family: 'Karrik';
+}
+
+.my_wokr .work_projects .reseau a{
+    text-decoration: none;
+    font-family: 'Karrik';
+}
+
+.my_wokr .work_projects .w_project img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/******************************************************
+****************** La page About Me ******************/
+
+
+.about_me{
+    width: 85%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_me .presentation{
+    width: 100%;
+    display: flex;
+}
+
+.about_me .presentation .txt{
+    width: 50%;
+}
+.about_me .presentation .txt h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2.2vw;
+    font-family: 'Karrik';
+    font-weight: normal;
+}
+.about_me .presentation .txt p{
+    width: 60%;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Karrik';
+}
+
+.about_me .presentation .pic{
+    width: 50%;
+
+}
+.about_me .presentation .pic .photo{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.about_me .presentation .pic .photo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact{
+    width: 100%;
+    margin-top: 15px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+.contact .insta{
+    text-align: center;
+}
+.contact .icon{
+    font-size: 90px;
+}
+.contact .insta p{
+    font-family: 'Karrik';
+}
+.contact .insta a{
+    text-decoration: none;
+    font-family: 'Karrik';
+}
+
+
+/****************************************************
+************** Page intitulé page1 *****************/
+
+.projet1{
+    width: 100%;
+    height: 79.1vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projet1 .detail_projet1{
+    width: 85%;
+    height: 100%;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-left: 8.3vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.projet1 .detail_projet1 .text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    font-family: 'Karrik';
+    text-align: justify;
+}
+.projet1 .detail_projet1 .image{
+    width: 22vw;
+    height: 100%;
+}
+.projet1 .detail_projet1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.projet1 .insta{
+    width: 14%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2px;
+}
+.projet1 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.projet1 .insta i{
+    font-size: 3.6vw;
+}
+.projet1 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.projet1 .insta a{
+    text-decoration: none;
+}
+
+
+/*******************************************************
+***************** Page intitulé page 2 ****************/
+
+.projet2{
+    width: 100%;
+    height: 79.1vh;
+    display: flex;
+}
+
+.projet2 .detail_projet2{
+    width: 87%;
+    height: 100%;
+    padding-top: 2.5vw;
+    padding-left: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.projet2 .detail_projet2 .text{
+    width: 50%;
+    height: 100%;
+    padding-bottom: 2.5vw;
+    text-align: justify;
+}
+.projet2 .detail_projet2 .text .text_et_image{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.projet2 .detail_projet2 .text .text_et_image .image{
+    width: 30%;
+    height: 95%;
+}
+.projet2 .detail_projet2 .text .text_et_image .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projet2 .detail_projet2 .text .text_et_image .text{
+    width: 65%;
+    height: 100%;
+    font-family: 'Karrik';
+}
+.projet2 .detail_projet2 .text .illustration{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projet2 .detail_projet2 .text .illustration .image{
+    width: 100%;
+    height: 100%;
+}
+.projet2 .detail_projet2 .text .illustration .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.projet2 .detail_projet2 .image{
+    width: 43%;
+    height: 100%;
+}
+.projet2 .detail_projet2 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.projet2 .insta{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2px;
+}
+.projet2 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.projet2 .insta i{
+    font-size: 3.6vw;
+}
+.projet2 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.projet2 .insta a{
+    text-decoration: none;
+}
+
+
+/*******************************************************
+***************** Page intitulé page 3 ****************/
+
+.page3{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.page3 .insta{
+    width: 13%;
+    height: 77vh;
+    margin-left: 87%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+}
+.page3 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page3 .insta i{
+    font-size: 3.6vw;
+}
+.page3 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page3 .insta a{
+    text-decoration: none;
+}
+
+
+.page3 .projet3{
+    width: 87%;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    padding-left: 2.7vw;
+}
+
+.page3 .projet3 .block1{
+    width: 100%;
+    height: 64vh;
+    display: flex;
+}
+.page3 .projet3 .block1 .rendu{
+    width: 60%;
+    height: 100%;
+    padding-right: 40px;
+}
+.page3 .projet3 .block1 .rendu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.page3 .projet3 .block1 .rendu .img1{
+    width: 60%;
+    height: 100%;
+}
+.page3 .projet3 .block1 .rendu .img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page3 .projet3 .block1 .rendu .img2{
+    width: 35%;
+    height: 100%;
+}
+.page3 .projet3 .block1 .rendu .img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.page3 .projet3 .block1 .txt{
+    width: 40%;
+    padding-left: 2vw;
+    padding-right: 2.5vw;
+    text-align: justify;
+}
+
+.page3 .projet3 .block2{
+    width: 100%;
+    height: 50vh;
+    margin-top: 20vh;
+    display: flex;
+}
+.page3 .projet3 .block2 .rendu{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.page3 .projet3 .block2 .rendu .image{
+    width: 50%;
+    height: 100%;
+}
+.page3 .projet3 .block2 .rendu .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page3 .projet3 .block2 .txt{
+    width: 50%;
+    margin-left: 8%;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    text-align: justify;
+}
+
+.page3 .projet3 .block3{
+    width: 100%;
+    height: 70vh;
+    margin-top: 25vh;
+    display: flex;
+}
+.page3 .projet3 .block3 .rendu{
+    width: 60%;
+    height: 100%;
+    margin-left: 8%;
+    display: flex;
+}
+.page3 .projet3 .block3 .rendu{
+    width: 100%;
+    height: 100%;
+}
+.page3 .projet3 .block3 .rendu .image{
+    width: 50%;
+    height: 100%;
+    border: solid black;
+}
+.page3 .projet3 .block3 .rendu .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page3 .projet3 .block3 .txt{
+    width: 30%;
+    padding-left: 3vw;
+    text-align: justify;
+}
+
+/*******************************************************
+***************** Page intitulé page 4 ****************/
+
+.page4{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 7vh;
+}
+
+.page4 .projet{
+    width: 87%;
+    height: 78vh;
+    padding-left: 120px;
+    padding-top: 5vh;
+}
+
+.page4 .projet .texts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.page4 .projet .texts .les_textes{
+    width: 65%;
+    height: 100%;
+}
+.page4 .projet .texts .les_textes .block1{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.page4 .projet .texts .les_textes .block1 .rendu{
+    width: 30%;
+    height: 100%;
+}
+.page4 .projet .texts .les_textes .block1 .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.page4 .projet .texts .les_textes .block1 .txt{
+    width: 70%;
+    height: 100%;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+
+.page4 .projet .texts .les_textes .txt2{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.page4 .projet .texts .rendu{
+    width: 35%;
+    height: 100%;
+}
+.page4 .projet .texts .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.page4 .insta{
+    width: 13%;
+    height: 78vh;
+    display: flex;
+    align-items: flex-end;
+}
+.page4 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page4 .insta i{
+    font-size: 3.6vw;
+}
+.page4 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page4 .insta a{
+    text-decoration: none;
+}
+
+.page4 .images{
+    width: 100%;
+    height: 60vh;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page4 .images .img_g{
+    height: 100%;
+    width: 36%;
+}
+.page4 .images .img_p{
+    height: 345px;
+    width: 23%;
+}
+.page4 .images .img_p img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.page4 .images .img_g img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/*******************************************************
+***************** Page intitulé page 5 ****************/
+
+.page5{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.page5 .insta{
+    width: 13%;
+    height: 77vh;
+    margin-left: 87%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+}
+.page5 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page5 .insta i{
+    font-size: 3.6vw;
+}
+.page5 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page5 .insta a{
+    text-decoration: none;
+}
+
+.page5 .projet{
+    width: 87%;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    padding-left: 2.7vw;
+}
+.page5 .projet .block1{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+}
+
+.page5 .projet .block1 .rendu{
+    width: 37%;
+    height: 100%;
+}
+.page5 .projet .block1 .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page5 .projet .block1 .textes{
+    width: 63%;
+    height: 100%;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+.page5 .projet .block1 .textes .txt{
+    width: 100%;
+    height: 35vh;
+    text-align: justify;
+}
+.page5 .projet .block1 .textes .rendu{
+    width: 100%;
+    height: 29vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.page5 .projet .block1 .textes .rendu img{
+    height: 28vh;
+    width: 40%;
+    object-fit: cover;
+}
+
+.page5 .projet .block2{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+.page5 .projet .block2 .image{
+    width: 18vw;
+    height: 100%;
+}
+
+.page5 .projet .block2 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*******************************************************
+***************** Page intitulé page 6 ****************/
+.page6{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page6 .insta{
+    width: 13%;
+    min-height: 77vh;
+    margin-left: 87%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+}
+.page6 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page6 .insta i{
+    font-size: 3.6vw;
+}
+.page6 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page6 .insta a{
+    text-decoration: none;
+}
+
+.page6 .projet{
+    width: 87%;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+    padding-left: 2.7vw;
+}
+
+.page6 .projet .block1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.page6 .projet .block1 .rendus{
+    width: 30%;
+    height: 100%;
+}
+.page6 .projet .block1 .rendus .mini-rendu{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.page6 .projet .block1 .rendus .mini-rendu .mini{
+    width: 47.5%;
+    height: 100%;
+}
+.page6 .projet .block1 .rendus .mini-rendu .mini img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page6 .projet .block1 .rendus .rendu-grand{
+    width: 100%;
+    height: 55vh;
+    margin-top: 4vh;
+}
+.page6 .projet .block1 .rendus .rendu-grand img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page6 .projet .block1 .rendus .grand-rendu2{
+    width: 100%;
+    height: 65vh;
+}
+.page6 .projet .block1 .rendus .grand-rendu2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page6 .projet .block1 .txt{
+    width: 40%;
+    height: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+
+.page6 .projet .block2{
+    width: 95%;
+    height: 80vh;
+    margin-left: auto;
+    margin-top: 15vh;
+    display: flex;
+}
+
+.page6 .projet .block2 .txt{
+    width: 55%;
+    height: 100%;
+    padding: 5vw;
+}
+
+.page6 .projet .block2 .rendu{
+    width: 45%;
+    height: 100%;
+    padding: 5vw;
+    background: #000;
+}
+.page6 .projet .block2 .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.les-rendus{
+    width: 100%;
+    height: 90vh;
+    z-index: 100;
+    margin-top: 8vh;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+.les-rendus .rendu{
+    width: 49%;
+    height: 100%;
+}
+.les-rendus .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*******************************************************
+***************** Page intitulé page 7 ****************/
+
+.page7{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.page7 .insta{
+    width: 13%;
+    min-height: 77vh;
+    margin-left: 87%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+}
+.page7 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page7 .insta i{
+    font-size: 3.6vw;
+}
+.page7 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page7 .insta a{
+    text-decoration: none;
+}
+
+.page7 .projet{
+    width: 87%;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+    padding-left: 2.7vw;
+    flex-wrap: wrap;
+}
+
+.page7 .projet .block1{
+    width: 100%;
+    height: 80vh;
+}
+
+.page7 .projet .block1 .haut{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.page7 .projet .block1 .haut .image{
+    width: 25%;
+    height: 100%;
+}
+.page7 .projet .block1 .haut .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page7 .projet .block1 .bas{
+    width: 100%;
+    height: 47vh;
+    margin-top: 3vh;
+    display: flex;
+}
+.page7 .projet .block1 .bas .rendus{
+    width: 65%;
+    height: 100%;
+}
+.page7 .projet .block1 .bas .rendus img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page7 .projet .block1 .bas .txt{
+    width: 35%;
+    height: 100%;
+    padding-left: 2vw;
+}
+
+.page7 .projet .block2{
+    width: 90%;
+    height: 70vh;
+    margin-top: 25vh;
+    display: flex;
+}
+
+.page7 .projet .block2 .rendu{
+    width: 45%;
+    height: 100%;
+}
+.page7 .projet .block2 .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.5vw 4.5vw;
+    background: fuchsia;
+}
+.page7 .projet .block2 .textes{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2vw;
+}
+.page7 .projet .block2 .textes .txt{
+    width: 100%;
+    height: 29vh;
+}
+
+.page7 .projet .block2 .textes .rendus{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+.page7 .projet .block2 .textes .rendus .image{
+    width: 48%;
+    height: 100%;
+}
+.page7 .projet .block2 .textes .rendus .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.page7 .projet .block3{
+    width: 93%;
+    height: 70vh;
+    margin-left: auto;
+    margin-top: 20vh;
+    display: flex;
+}
+
+.page7 .projet .block3 .rendu{
+    width: 45%;
+    height: 100%;
+}
+.page7 .projet .block3 .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.5vw 1.5vw;
+    background: teal;
+}
+.page7 .projet .block3 .textes{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    padding-right: 3.5vw;
+    flex-wrap: wrap;
+}
+.page7 .projet .block3 .textes .txt{
+    width: 100%;
+    height: 29vh;
+}
+
+.page7 .projet .block3 .textes .rendus{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+.page7 .projet .block3 .textes .rendus .image{
+    width: 48%;
+    height: 100%;
+}
+.page7 .projet .block3 .textes .rendus .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.page7 .projet .block4{
+    width: 97%;
+    height: 70vh;
+    margin-top: 25vh;
+    display: flex;
+}
+
+.page7 .projet .block4 .rendu{
+    width: 45%;
+    height: 100%;
+}
+.page7 .projet .block4 .rendu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.5vw 1.5vw;
+    background: navy;
+}
+.page7 .projet .block4 .textes{
+    width: 27.5%;
+    height: 100%;
+    padding-left:1.5vw;
+}
+
+.page7 .projet .block4 .rendu-mini{
+    width: 27.5%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.page7 .projet .block4 .rendu-mini .image{
+    width: 80%;
+    height: 45vh;
+}
+.page7 .projet .block4 .rendu-mini .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*******************************************************
+***************** Page intitulé page 8 ****************/
+.page8{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page8 .insta{
+    width: 13%;
+    min-height: 77vh;
+    margin-left: 87%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+}
+.page8 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page8 .insta i{
+    font-size: 3.6vw;
+}
+.page8 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page8 .insta a{
+    text-decoration: none;
+}
+
+.page8 .projet{
+    width: 87%;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+    padding-left: 2.7vw;
+    flex-wrap: wrap;
+}
+
+.page8 .projet .block1{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.page8 .projet .block1 .grand-rendu{
+    width: 50%;
+    height: 100%;
+}
+.page8 .projet .block1 .grand-rendu img{
+    width: 100%;
+    height: 100%
+}
+
+.page8 .projet .block1 .txt{
+    width: 30%;
+    height: 100%;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.page8 .projet .block1 .mini-rendu{
+    width: 20%;
+    height: 35vh;   
+}
+.page8 .projet .block1 .mini-rendu img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.page8 .projet .block2{
+    width: 100%;
+    height: 105vh;
+    margin-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page8 .projet .block2 .haut{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page8 .projet .block2 .haut .rendus{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.page8 .projet .block2 .haut .rendus .rendu1{
+    width: 50%;
+    height: 100%;
+    padding-top: 1.5vw;
+    padding-right: 2.5vw;
+    padding-bottom: 1.5vw;
+}
+.page8 .projet .block2 .haut .rendus .rendu1 img{
+    width: 100%;
+    height: 100%;
+}
+.page8 .projet .block2 .haut .rendus .rendu2{
+    width: 50%;
+    height: 100%;
+}
+.page8 .projet .block2 .haut .rendus .rendu2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page8 .projet .block2 .haut .txt{
+    width: 37%;
+    height: 100%;
+    padding-left: 1.5vw;
+}
+
+
+.page8 .projet .block2 .bas{
+    width: 100%;
+    height: 57%;
+    margin-top: 5%;
+    display: flex;
+}
+
+.page8 .projet .block2 .bas .txt{
+    width: 25%;
+    height: 100%;
+}
+
+.page8 .projet .block2 .bas .rendu1{
+    width: 25%;
+    height: 75%;
+    padding: 1vw;
+}
+.page8 .projet .block2 .bas .rendu1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page8 .projet .block2 .bas .rendu2{
+    width: 25%;
+    height: 75%;
+}
+.page8 .projet .block2 .bas .rendu2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page8 .projet .block3{
+    width: 90%;
+    height: 85vh;
+    margin-left: auto;
+    margin-top: 7vh;
+    display: flex;
+}
+
+.page8 .projet .block3 .txt{
+    width: 50%;
+    height: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+.page8 .projet .block3 .images{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.page8 .projet .block3 .images .rendu{
+    width: 230px;
+    height: 230px;
+    padding: 1vw;
+}
+.page8 .projet .block3 .images .rendu img{
+    height: 100%;
+    width: 100%;
+}
+
+.page8 .projet .block4{
+    width: 65%;
+    height: auto;
+    margin-top: 7vh;
+}
+
+.page8 .bandeau{
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+.page8 .bandeau img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*******************************************************
+***************** Page intitulé page 9 ****************/
+
+
+.page9{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page9 .insta{
+    width: 13%;
+    min-height: 77vh;
+    margin-left: 87%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+}
+.page9 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page9 .insta i{
+    font-size: 3.6vw;
+}
+.page9 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page9 .insta a{
+    text-decoration: none;
+}
+
+.page9 .projet{
+    width: 87%;
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+    padding-left: 2.7vw;
+    display: flex;
+}
+
+.page9 .projet .compte{
+    width: 30%;
+    height: 37vw;
+}
+.page9 .projet .compte img{
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+    object-fit: cover;
+}
+
+.page9 .projet .txt{
+    width: 40%;
+    height: auto;
+    padding: 0px 5.7vw;
+}
+
+.page9 .projet .postes{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.5vw;
+    justify-content: flex-end;
+}
+.page9 .projet .postes .poste{
+    width: 23vw;
+    height: 23vw;
+    margin-bottom: 2vh;
+}
+.page9 .projet .postes .poste:nth-child(2){
+    border: solid #91BAA8 3px;
+}
+
+.page9 .projet .postes .poste img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*******************************************************
+***************** Page intitulé page 10 ****************/
+
+
+.page10{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page10 .insta{
+    width: 13%;
+    min-height: 77vh;
+    margin-left: 87%;
+    display: flex;
+    position: fixed;
+    align-items: flex-end;
+}
+.page10 .insta .link{
+    width: 100%;
+    text-align: center;
+}
+.page10 .insta i{
+    font-size: 3.6vw;
+}
+.page10 .insta p{
+    font-size: 16px;
+    font-family: 'Karrik';
+}
+.page10 .insta a{
+    text-decoration: none;
+}
+
+.page10 .projet{
+    width: 87%;
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+    padding-left: 2.7vw;
+}
+
+.page10 .projet h2{
+    font-size: 4vw;
+    font-family: 'Karrik';
+    font-weight: normal;
+}
+
+.page10 .projet .block1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page10 .projet .block1 .le_projet{
+    width: 75%;
+}
+.page10 .projet .block1 .le_projet .haut{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.page10 .projet .block1 .le_projet .haut .rendu{
+    width: 19vw;
+    height: 19vw;
+}
+.page10 .projet .block1 .le_projet .haut .rendu img{
+    width: 100%;
+    height: 100%;
+}
+
+.page10 .projet .block1 .le_projet .txt{
+    width: 100%;
+    padding: 2.5vw 7.5vw;
+}
+.page10 .projet .block1 .equipe{
+    width: 19vw;
+    height: 25vw;
+}
+.page10 .projet .block1 .equipe img{
+    width: 100%;
+    height: 100%;
+}
+
+.page10 .projet .block2{
+    width: 100%;
+    position: relative;
+    margin-top: 5vh;
+}
+
+.page10 .projet .block2 .rendu1{
+    width: 65%;
+    display: flex;
+}
+
+.page10 .projet .block2 .rendu1 .visuel{
+    width: 19vw;
+    height: 25vw;
+}
+.page10 .projet .block2 .rendu1 .visuel img{
+    width: 100%;
+    height: 100%;
+}
+.page10 .projet .block2 .rendu1 .txt{
+    width: 60%;
+    padding: .5vw 2vw;
+}
+
+.page10 .projet .block2 .rendu2{
+    width: 26vw;
+    height: 17vw;
+    position: absolute;
+    top: 15vw;
+    left: 14vw;
+    transform: translate(-15vw 14vw);
+}
+
+.page10 .projet .block2 .rendu2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page10 .projet .block3{
+    width: 100%;
+    position: relative;
+    margin-top: 13vh;
+}
+
+.page10 .projet .block3{
+    text-align: right;
+}
+
+.page10 .projet .block3 .rendu1{
+    width: 65%;
+    display: flex;
+    margin-left: auto;
+}
+
+.page10 .projet .block3 .rendu1 .visuel{
+    width: 20vw;
+    height: 26vw;
+}
+.page10 .projet .block3 .rendu1 .visuel img{
+    width: 100%;
+    height: 100%;
+}
+.page10 .projet .block3 .rendu1 .txt{
+    width: 68%;
+    padding: .5vw 2vw;
+}
+
+.page10 .projet .block4{
+    width: 90%;
+    margin-top: -15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page10 .projet .block4 .rendu{
+    width: 19vw;
+    height: 25vw;
+}
+.page10 .projet .block4 .rendu  img{
+    width: 100%;
+    height: 100%;
+}
+
+.page10 .projet .block4 .txt{
+    width: 45%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.page10 .projet .block5{
+    width: 100%;
+    margin-top: 15vh;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page10 .projet .block5 .txt{
+    width: 37%;
+    text-align: right;
+}
+
+.page10 .projet .block5 .rendu1{
+    height: 17vw;
+    width: 22vw;
+}
+.page10 .projet .block5 .rendu1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page10 .projet .block5 .rendu2{
+    height: 17vw;
+    width: 26.5vw;
+}
+.page10 .projet .block5 .rendu2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page10 .projet .block6{
+    width: 100%;
+    height: 60vh;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page10 .projet .block7{
+    width: 100%;
+    height: 85vh;
+    margin-top: 7vh;
+    display: flex;
+}
+
+.page10 .projet .block7 .rendu{
+    width: 55%;
+    height: 100%;
+}
+.page10 .projet .block7 .rendu img{
+    width: 100%;
+    height: 100%;
+}
+.page10 .projet .block7 .txt{
+    width: 45%;
+    display: flex;
+    padding-left: 2vw;
+    padding-right: 4.5vw;
+}
+.page10 .projet .block7 .txt h2{
+    margin-right: 8px;
+}
+
+.page10 .bandeau{
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+.page10 .bandeau img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Le site est en prodution */
+.contenu_page{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenu_page_mobile{
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 3000px) and (min-width: 1700px){
+
+
+    nav .logo h1{
+        font-size: 6vw;
+    }
+
+    nav .navigation{
+        flex-grow: 1;
+    }
+    
+}
+
+
+@media(max-width: 992px){
+
+    
+    
+
+    
+}
+
+
+
+@media(max-width: 794px){
+
+
+    
+
+
+    /* Site est en production */
+    
+    .home{
+        display: none;
+    }
+    .contenu_page_mobile{
+        display: flex;
+    }
+}
+
+
+
+@media(max-width: 759px){
+    
+    nav .logo h1{
+        font-size: 8.2vw;
+    }
+
+    nav .navigation ul{
+        margin-bottom: 18px;
+    }
+
+}
+
+
